@@ -73,9 +73,13 @@ const DonationInfo = () => {
           </Box>
           <LinearProgress
             variant="determinate"
-           
             value={(123456 / 847987) * 100}
-            sx={{ mt: 1, height: 8, borderRadius: 5 ,backgroundColor:"#efefef"}}
+            sx={{
+              mt: 1,
+              height: 8,
+              borderRadius: 5,
+              backgroundColor: "#efefef",
+            }}
           />
         </Box>
 
@@ -132,7 +136,7 @@ const DonationInfo = () => {
 
         {/* Location */}
         <Box display="flex" alignItems="center" gap={1}>
-          <FmdGoodIcon fontSize="medium"  color="inherit" />
+          <FmdGoodIcon fontSize="medium" color="inherit" />
           <Typography variant="body2" color="textSecondary">
             San Fransisco, California
           </Typography>
@@ -155,7 +159,7 @@ const DonationInfo = () => {
 
         {/* Encryption Info */}
         <Box display="flex" alignItems="center" gap={2}>
-          <LockOutlinedIcon fontSize="small" aria-label="lock icon"/>
+          <LockOutlinedIcon fontSize="small" aria-label="lock icon" />
           <Typography variant="caption" color="text.secondary">
             We protect your payment information using 256 bit encryption
           </Typography>
@@ -184,7 +188,7 @@ const DonationInfo = () => {
               />
             </IconButton>
             <IconButton>
-              <LinkIcon aria-label="link-icon"/>
+              <LinkIcon aria-label="link-icon" />
             </IconButton>
           </Box>
         </Box>
@@ -212,7 +216,10 @@ const DonationInfo = () => {
           </Box>
 
           <IconButton>
-            <KeyboardArrowDownTwoToneIcon  aria-label="arrrow down icon" color="primary" />
+            <KeyboardArrowDownTwoToneIcon
+              aria-label="arrrow down icon"
+              color="primary"
+            />
           </IconButton>
         </Box>
       </Card>
