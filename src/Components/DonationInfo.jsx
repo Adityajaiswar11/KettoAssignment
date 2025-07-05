@@ -155,7 +155,7 @@ const DonationInfo = () => {
 
         {/* Encryption Info */}
         <Box display="flex" alignItems="center" gap={2}>
-          <LockOutlinedIcon fontSize="small" />
+          <LockOutlinedIcon fontSize="small" aria-label="lock icon"/>
           <Typography variant="caption" color="text.secondary">
             We protect your payment information using 256 bit encryption
           </Typography>
@@ -184,7 +184,7 @@ const DonationInfo = () => {
               />
             </IconButton>
             <IconButton>
-              <LinkIcon />
+              <LinkIcon aria-label="link-icon"/>
             </IconButton>
           </Box>
         </Box>
@@ -212,7 +212,7 @@ const DonationInfo = () => {
           </Box>
 
           <IconButton>
-            <KeyboardArrowDownTwoToneIcon color="primary" />
+            <KeyboardArrowDownTwoToneIcon  aria-label="arrrow down icon" color="primary" />
           </IconButton>
         </Box>
       </Card>

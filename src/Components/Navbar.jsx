@@ -36,7 +36,7 @@ const Navbar = () => (
       </Box>
       <Box display="flex" alignItems="center" justifyContent="center" gap={0.5}>
         <span>
-          <LockIcon sx={{ color: "#ffb636" }} />
+          <LockIcon sx={{ color: "#ffb636" }} aria-label="secure lock icon"/>
         </span>
         <Typography variant="body2" sx={{ color: "#9e9e9e", fontWeight: 500 }}>
           100% secure

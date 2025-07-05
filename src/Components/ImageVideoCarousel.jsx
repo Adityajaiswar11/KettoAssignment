@@ -84,6 +84,7 @@ const ImageVideoCarousel = () => {
                   <video
                     src={item.src}
                     controls
+                 aria-label="Video playing"
                     muted
                     autoPlay
                     preload="metadata"
