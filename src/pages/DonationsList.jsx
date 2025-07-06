@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Avatar, Box, Button, Typography, Chip, Stack } from "@mui/material";
+import { Avatar, Box, Button, Typography, Chip, Stack, IconButton } from "@mui/material";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 
 export const DonationsUserList = [
@@ -53,8 +53,11 @@ const DonationsList = () => {
 
       {visibleDonations.map((donor, index) => (
         <Box key={index} sx={{ mb: 3 }}>
-          <Stack direction="row" alignItems="center" spacing={1.5}>
-            <Avatar color="#468cb7" size="small" aria-label="user-avatar" />
+          <Stack direction="row" alignItems="center" spacing={1}>
+             <IconButton  aria-label="user-avatar">
+              
+            <Avatar color="#468cb7" size="small" />
+            </IconButton>
             <Typography fontWeight={600} sx={{ color: "#6c6c6c" }}>
               {donor.name}
             </Typography>
@@ -75,7 +78,7 @@ const DonationsList = () => {
             )}
           </Stack>
 
-          <Stack direction="row" spacing={1} mt={0.5} ml={6}>
+          <Stack direction="row" spacing={1} mt={0.5} ml={8}>
             <Typography variant="body2" color="textSecondary">
               ${donor.amount}
             </Typography>
@@ -88,7 +91,7 @@ const DonationsList = () => {
           </Stack>
 
           {donor.message && (
-            <Typography variant="body2" color="text.secondary" mt={1} ml={6}>
+            <Typography variant="body2" color="text.secondary" mt={1} ml={8}>
               “{donor.message}”
             </Typography>
           )}

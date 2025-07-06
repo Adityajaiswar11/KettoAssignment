@@ -19,7 +19,7 @@ import LinkIcon from "@mui/icons-material/Link";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import KeyboardArrowDownTwoToneIcon from "@mui/icons-material/KeyboardArrowDownTwoTone";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
-import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
+import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 const DonationInfo = () => {
   return (
     <Box
@@ -74,6 +74,7 @@ const DonationInfo = () => {
           <LinearProgress
             variant="determinate"
             value={(123456 / 847987) * 100}
+            aria-label="donate progress bar"
             sx={{
               mt: 1,
               height: 8,
@@ -97,7 +98,7 @@ const DonationInfo = () => {
 
         {/* Organizer */}
         <Box display="flex" gap={2}>
-          <Avatar alt="Organizer" />
+          <Avatar alt="Organizer" aria-label="Organizer icon" />
           <Box>
             <Typography variant="subtitle2" fontWeight="bold">
               Organizer
@@ -181,10 +182,10 @@ const DonationInfo = () => {
               <LinkedInIcon sx={{ color: "#0A66C2" }} />
             </IconButton>
             <IconButton aria-label="Share on LinkedIn">
-              <MailOutlineOutlinedIcon sx={{ color: "#E1306C" }}/>
+              <MailOutlineOutlinedIcon sx={{ color: "#E1306C" }} />
             </IconButton>
-            <IconButton>
-              <LinkIcon aria-label="link-icon" />
+            <IconButton aria-label="link-icon">
+              <LinkIcon />
             </IconButton>
           </Box>
         </Box>
@@ -210,11 +211,8 @@ const DonationInfo = () => {
             </Typography>
           </Box>
 
-          <IconButton>
-            <KeyboardArrowDownTwoToneIcon
-              aria-label="arrrow down icon"
-              color="primary"
-            />
+          <IconButton aria-label="arrrow down icon">
+            <KeyboardArrowDownTwoToneIcon color="primary" />
           </IconButton>
         </Box>
       </Card>
