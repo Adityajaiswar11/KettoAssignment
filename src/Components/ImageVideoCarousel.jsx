@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Keyboard, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -73,7 +73,7 @@ const ImageVideoCarousel = () => {
                   <img
                     src={item.src}
                     alt={`media-${i}`}
-                    loading="lazy"
+                    loading="eager"
                     style={{
                       width: "100%",
                       height: "100%",
