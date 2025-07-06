@@ -127,7 +127,7 @@ const MainContent = () => {
               width: "100%",
               zIndex: 100,
               bgcolor: "#fff",
-              boxShadow: "0 -2px 8px rgba(0,0,0,0.1)",
+              boxShadow: "0 -2px 8px rgba(87, 60, 60, 0.1)",
             }}
           >
             <img

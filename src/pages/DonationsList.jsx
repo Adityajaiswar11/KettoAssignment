@@ -61,7 +61,13 @@ const DonationsList = () => {
             {donor.topDonor && (
               <Chip
                 label="Top donor"
-                icon={<EmojiEventsIcon fontSize="small" color="#888be2" aria-label="emogi" />}
+                icon={
+                  <EmojiEventsIcon
+                    fontSize="small"
+                    color="#888be2"
+                    aria-label="emogi"
+                  />
+                }
                 size="small"
                 variant="outlined"
                 sx={{ borderRadius: 1, fontWeight: 500, color: "#888be2" }}

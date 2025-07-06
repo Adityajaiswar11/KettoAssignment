@@ -5,41 +5,41 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
-import img2 from "../assets/testimonial2.avif";
-import img3 from "../assets/testimonial3.webp";
-import img4 from "../assets/testimonial4.webp";
-import img5 from "../assets/testimonial5.webp";
-import img6 from "../assets/testimonial6.webp";
+import img1 from "../assets/testimonial1.webp";
+import img2 from "../assets/testimonial3.webp";
+import img3 from "../assets/testimonial4.webp";
+import img4 from "../assets/testimonial5.webp";
+import img5 from "../assets/testimonial6.webp";
 
 const testimonials = [
   {
-    image: img2,
+    image: img1,
     name: "Mr John Doe",
     quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     info: "Lorem ipsum dolor sit amet consectetur",
   },
   {
-    image: img3,
+    image: img2,
     name: "Dr Ram Singh",
     quote: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
     info: "Lorem ipsum dolor sit amet consectetur",
   },
   {
-    image: img4,
+    image: img3,
     name: "Tommy",
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sapiente doloremque rerum.",
     info: "Lorem ipsum dolor sit amet consectetur",
   },
   {
-    image: img5,
+    image: img4,
     name: "Maria",
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sapiente doloremque rerum.",
     info: "Lorem ipsum dolor sit amet consectetur",
   },
   {
-    image: img6,
+    image: img5,
     name: "Victoria",
     quote:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sapiente doloremque rerum.",
@@ -66,7 +66,7 @@ const TestimonialCarousel = () => {
       <Typography
         variant="h6"
         fontWeight={600}
-        sx={{ my:3, color: "#4a4a4a" }}
+        sx={{ my:2, color: "#4a4a4a" }}
       >
         See what others are saying about us
       </Typography>

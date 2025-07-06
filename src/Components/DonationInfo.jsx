@@ -19,7 +19,7 @@ import LinkIcon from "@mui/icons-material/Link";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import KeyboardArrowDownTwoToneIcon from "@mui/icons-material/KeyboardArrowDownTwoTone";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
-
+import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
 const DonationInfo = () => {
   return (
     <Box
@@ -180,12 +180,8 @@ const DonationInfo = () => {
             <IconButton aria-label="Share on LinkedIn">
               <LinkedInIcon sx={{ color: "#0A66C2" }} />
             </IconButton>
-            <IconButton>
-              <img
-                src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
-                alt="Gmail"
-                width={24}
-              />
+            <IconButton aria-label="Share on LinkedIn">
+              <MailOutlineOutlinedIcon sx={{ color: "#E1306C" }}/>
             </IconButton>
             <IconButton>
               <LinkIcon aria-label="link-icon" />
@@ -199,7 +195,6 @@ const DonationInfo = () => {
           alignItems="center"
           justifyContent="space-between"
           gap={1}
-          mt={1}
           pt={1}
           sx={{ borderTop: "1px solid #eee" }}
         >
