@@ -11,6 +11,7 @@ import img3 from "../assets/testimonial4.webp";
 import img4 from "../assets/testimonial5.webp";
 import img5 from "../assets/testimonial6.webp";
 
+// Dummy Testimonials data
 const testimonials = [
   {
     image: img1,
@@ -56,17 +57,13 @@ const TestimonialCarousel = () => {
       sx={{
         width: "100%",
         backgroundColor: "#fff",
-        p: {
-          xs: 1,
-          sm: 2,
-          md: 0,
-        },
+        p: { xs: 1, sm: 2, md: 3 },
       }}
     >
       <Typography
         variant="h6"
         fontWeight={600}
-        sx={{ my:2, color: "#4a4a4a" }}
+        sx={{ my: 2, color: "#4a4a4a" }}
       >
         See what others are saying about us
       </Typography>
@@ -88,7 +85,7 @@ const TestimonialCarousel = () => {
             <Box
               sx={{
                 position: "relative",
-                height: 300,
+                aspectRatio: "4 / 3",
                 width: "100%",
                 borderRadius: 2,
                 overflow: "hidden",
@@ -99,11 +96,13 @@ const TestimonialCarousel = () => {
                 component="img"
                 src={item.image}
                 alt={item.name}
+                loading="lazy"
+                decoding="async"
                 sx={{
                   width: "100%",
                   height: "100%",
-                  objectFit: "fit",
-                  backgroundPosition: "center",
+                  objectFit: "cover",
+                  display: "block",
                 }}
               />
               <Box
@@ -111,13 +110,12 @@ const TestimonialCarousel = () => {
                   position: "absolute",
                   inset: 0,
                   background:
-                    "linear-gradient(to top, rgba(3, 3, 3, 1), rgba(0,0,0,.1))",
+                    "linear-gradient(to top, rgba(3, 3, 3, 1), rgba(0,0,0,0.1))",
                   color: "#fff",
                   p: 2,
-                  m: 0,
                   display: "flex",
                   flexDirection: "column",
-                  justifyContent: "end",
+                  justifyContent: "flex-end",
                 }}
               >
                 <Typography variant="body2" fontStyle="italic" mb={1}>
