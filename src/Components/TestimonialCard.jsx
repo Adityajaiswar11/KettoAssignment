@@ -57,13 +57,13 @@ const TestimonialCarousel = () => {
       sx={{
         width: "100%",
         backgroundColor: "#fff",
-        p: { xs: 1, sm: 2, md: 3 },
+        p: { xs: 1, sm: 2,  md: 0, },
       }}
     >
       <Typography
         variant="h6"
         fontWeight={600}
-        sx={{ my: 2, color: "#4a4a4a" }}
+        sx={{my:2 ,color: "#4a4a4a" }}
       >
         See what others are saying about us
       </Typography>

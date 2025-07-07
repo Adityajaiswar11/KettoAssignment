@@ -103,7 +103,7 @@ const MainContent = () => {
 
           <Grid size={{ xs: 12 }}>
             <Suspense fallback={<div>Loading Testimonials...</div>}>
-              <Box sx={{ backgroundColor: "red" }}>
+              <Box>
                 <TestimonialCard />
               </Box>
             </Suspense>
