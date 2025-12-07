@@ -6,7 +6,7 @@ import Documents from "../pages/Documents";
 const tabData = [
   {
     id: 1,
-    title: "Story",
+    title: "Campaign Story",
     content: <Campaign />,
   },
   {
