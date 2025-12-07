@@ -2,7 +2,7 @@ import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import LockIcon from "@mui/icons-material/Lock";
 const Navbar = () => (
   <AppBar
-    position="sticky"
+    position="fixed"
     sx={{
       backgroundColor: "white",
       boxShadow: {
