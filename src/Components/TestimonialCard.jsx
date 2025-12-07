@@ -15,7 +15,7 @@ import img5 from "../assets/testimonial6.webp";
 const testimonials = [
   {
     image: img1,
-    name: "Mr John Doe",
+    name: "Aditya Jaiswar",
     quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     info: "Lorem ipsum dolor sit amet consectetur",
   },
